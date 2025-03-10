@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>ESIT</title>
+    <link rel="stylesheet" href="tips.css">
+    <!-- <link rel="stylesheet" href="restips.css"> -->
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="calc.css">
+    <link rel="stylesheet" href="about.css">
+
+
+
+<style>
+    *{
+        margin:0px;
+        padding:0px;
+        transition : all 0.3s ease-in-out;
+    }
+    body{
+        height:100dvh;
+        font-family: Roboto;
+        background-color: #28443F;
+        display: flex;
+        flex-direction: column;
+        align-items:stretch;
+    }
+    .nav-header{
+        /* position: fixed;
+        top:0px;
+        left:0px;
+        right:0px; */
+        height:14vh;
+        background: #1f1f21;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    section h1{
+        text-align: center;
+        color:#fff;
+    }
+    .nav-header a{
+        text-decoration: none; 
+        color:#F2FD7D;
+        font-weight:bold;
+        font-size:18px;
+    }
+    .nav-header div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height:2rem;
+        width:6rem;
+        /* border: solid #F2FD7D 2px; */
+        border-radius:6px;
+        padding:8px;
+    }
+    .nav-header div:hover{
+        background: #28443F;
+        /* border:solid #28443F 2px; */
+        
+    }
+    .nav-header div:hover .nav-tabs ,
+    .nav-tabs{
+        color:#fff;
+        text-decoration: none;
+    }
+    .nav-header div:active {
+        background: #000;
+        border: solid #F2FD7D 2px;
+    }
+    header div:active .nav-tabs{
+        color:#F2FD7D;
+    }
+    .hidden{
+        display:none;
+    }
+    .active{
+        display:block;
+    }
+    .js-generate-btn{
+        padding:12px;
+        border : solid #28443F 2px;
+        border-radius:4px;
+        background: #F2FD7D;
+        color:#28443F;
+        font-weight: bold;
+        font-size:14px;
+        cursor:pointer;
+    }
+    .js-generate-btn:hover{
+        box-shadow: 1px 1px 0.8px rgba(0,0,0,0.6);
+        opacity: 0.8px;
+    }
+    .js-generate-btn:active{
+        opacity: 0.6px;
+    }
+    .not-header{
+        /* background: red; */
+        height:86vh;
+        /* padding:12px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: stretch;
+    }
+    .form-section  {
+        display:flex;
+        align-items: center;
+        justify-content: stretch;
+    }
+</style>
+</head>
+<body>
+    <header class="nav-header">
+          <div class="head-div" id="home">
+            <a href="#home-section" class="nav-tabs">Home</a>
+          </div>  
+          <div class="head-div" id="about">
+            <a href="#about-section" class="nav-tabs">About</a>
+          </div>  
+          <div class="head-div" id=calculator>
+            <a href="#calculator-section" class="nav-tabs">Calculator</a>
+          </div>  
+          <div class="head-div" id="form">
+            <a href="#form-section" class="nav-tabs">Form</a>
+          </div>  
+          <div class="head-div" id="Tips">
+            <a href="#tips-section" class="nav-tabs">Tips</a>
+          </div> 
+    </header>
+<div class="not-header"> <!-- this is blow header div-->
+    <section id="home-section" class="active"><!--this is acttual home section-->
+        <div class="hero"> <!--this is added part of home section-->
+            <h1>Empowering Communities for a Sustainable Future in IT</h1>
+            <!-- <p>Together, we can build a greener future through innovation, collaboration, and green tech solutions.</p> -->
+            <!-- <button class="cta-btn">Join the Movement</button> -->
+        </div>
+        <div class="community">
+            <div class="box">
+                <h2>🌍 Calculate Your Carbon Footprint Today!</h2>
+                <p> Understand how your everyday activities impact the environment and take the first step toward a greener future.</p>
+                <button class="cta-btn">
+                    <a href="#calculator-section" class="nav-tabs">🌿 Calculate Now</a></button>
+            </div>
+            <div class="box">
+                <h2>💡 Get Your Daily Tip for a Better Life!</h2>
+                <p> Looking for ways to improve your day? Receive a random tip that can help you make smarter choices, boost your productivity.</p>
+                <button class="cta-btn">
+                    <a href="#tips-section" class="nav-tabs">🎯 Get Your Tip Now</a></button>
+            </div>
+            <div class="box">
+                <h2>📝 We truly value and appreciate your feedback!</h2>
+                <p>Help us improve by sharing your valuable thoughts and experiences. Your feedback truly makes a difference!</p>
+                <button class="cta-btn">
+                    <a href="#form-section" class="nav-tabs">📩 Submit Your Feedback</a></button>
+            </div>
+        </div>
+    </section>
+    <section id="about-section" class="hidden">
+        <h1 class="about-h1">About Us</h1>
+            <p class="about-p">We promote sustainability in the IT sector, helping individuals and organizations reduce their environmental impact.</p>
+            
+
+    </section>
+    <section id="calculator-section" class="hidden">
+            
+            <div class="container">
+                <h1>Carbon Footprint Calculator</h1>
+        
+                <label for="electricity_usage">Enter your monthly electricity usage in kWh:</label>
+                <input type="number" id="electricity_usage" required>
+        
+                <label for="devices">Enter the number of devices (laptops, desktops, smartphones) you own:</label>
+                <input type="number" id="devices" required>
+        
+                <label for="commute_distance">Enter your one-way commute distance to office (in km):</label>
+                <input type="number" id="commute_distance" required>
+        
+                <label for="transport_mode">Enter your mode of transportation (Car, Bike, Public Transport):</label>
+                <input type="text" id="transport_mode" required>
+        
+                <label for="cloud_usage">Enter your monthly cloud services usage in hours (e.g., AWS, Google Cloud):</label>
+                <input type="number" id="cloud_usage" required>
+        
+                <label for="paper_usage">Enter your monthly paper usage in kg:</label>
+                <input type="number" id="paper_usage" required>
+        
+                <button onclick="calculateCarbonFootprint()">Calculate Carbon Footprint</button>
+        
+                <h2 id="result"></h2>
+            </div>
+            
+    </section>
+    <section id="form-section" class="hidden">
+            <h1>This is the form page.</h1>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeTcE-uWDGjmvs2MQSUzaAC_K-t-9xxYzwXuAg_ZYDmekkZDg/viewform?embedded=true" width="100%" height="700px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </section>
+    <section id="tips-section" class="hidden">
+            
+            <div class="card">
+                <div class="head">
+                    <h1>TIP of the day</h1>
+                </div>
+                <hr>
+                <div class="tip-section">
+                </div>
+                <div class="btn-section">
+                    <button class="js-generate-btn">Generate</button>
+                </div>
+            </div>
+    </section>
+</div>
+
+<script src="home.js"></script>
+<script src="calc.js"></script>
+<script src="tips.js"></script>
+<script>
+    const anchors = document.querySelectorAll('.nav-tabs');
+    const sections = document.querySelectorAll('section');
+    const divTabs = document.querySelectorAll('.head-div');
+    const tipBtn= document.querySelector('.js-generate-btn');
+    const  boxBtn = document.querySelectorAll('.community .box');
+
+
+    function hideSection(){
+        if(sections.length>0){
+            sections.forEach(section =>{
+                section.classList.add('hidden');
+                section.classList.remove('active');
+            });
+
+        }else{
+            alert('No sections found.There has been an error while loading the page.');
+        }
+    }
+    document.addEventListener('DOMContentLoaded', ()=>{
+        hideSection();
+        if(sections.length>0){
+            sections[0].classList.add('active');
+            sections[0].classList.remove('hidden');
+        }else{
+            alert("Ther is an issue with the page loading. Refresh the page and try again");
+        }
+    
+    });
+
+    anchors.forEach(anchor =>{
+        anchor.addEventListener('click' , (e)=>{
+            e.preventDefault();
+            
+            const targetId = anchor.getAttribute("href").substring(1);  // Get the ID without the '#'
+            const targetSection = document.getElementById(targetId);
+          
+            hideSection();
+
+            if (targetSection) {
+                targetSection.classList.add("active");
+                targetSection.classList.remove("hidden");
+            }
+        })
+    })
+ 
+
+// this is for tip generation
+   function tipsGenerator(){
+    const rand = Math.floor(Math.random()*101);
+    const tip= tips[rand];
+    document.querySelector(".tip-section").textContent=tip;
+   }
+   tipsGenerator();
+   tipBtn.addEventListener('click', ()=>{
+    tipsGenerator();
+   })
+
+   
+</script>
+</body>
+</html>

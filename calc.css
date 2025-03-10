@@ -1,0 +1,112 @@
+.calculator-section{
+    height: 86vh;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+            background-color: #28443F;
+            padding: 20px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 450px; /* Increased max-width for larger screens */
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden; /* Prevent container from overflowing */
+            box-sizing: border-box; /* Ensures padding does not affect the width */
+        }
+.container h1 {
+            text-align: center;
+            color: #F2FD7D;
+            margin-bottom: 20px;
+            font-size: 24px; /* Adjusted font size for better visibility */
+        }
+.container label {
+            font-size: 16px;
+            margin-bottom: 10px;
+            display: block;
+            color: #F2FD7D;
+        }
+.container input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 2px solid #F2FD7D;
+            border-radius: 5px;
+            background-color: #28443F;
+            color: white;
+            font-size: 16px;
+            box-sizing: border-box; /* Ensures padding does not affect width */
+        }
+.container input:focus, select:focus {
+            border-color: #F2FD7D;
+            outline: none;
+        }
+.container button {
+            background-color: #F2FD7D;
+            color: #28443F;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+.container button:hover {
+            background-color: #e0e066;
+        }
+.container #result {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #F2FD7D;
+        }
+@media (max-width: 600px) {
+            .container {
+                padding: 15px;
+                width: 100%;
+                max-width: 100%; /* Ensure full-width on small screens */
+                box-sizing: border-box;
+            }
+
+            .container h1 {
+                font-size: 20px; /* Smaller font size on mobile */
+            }
+
+            .container input, select, button {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+            #result {
+                font-size: 18px;
+            }
+        }
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+        width: 100%;
+        max-width: 100%; /* Ensure full-width on very small screens */
+        box-sizing: border-box;
+    }
+
+    .container h1 {
+        font-size: 18px; /* Smaller font size for the header */
+    }
+
+    .container label {
+        font-size: 14px; /* Smaller label font size */
+    }
+
+    .container input, select, button {
+        font-size: 12px; /* Smaller font size for inputs and buttons */
+        padding: 8px; /* Slightly smaller padding */
+    }
+
+    #result {
+        font-size: 16px; /* Smaller font size for the result */
+    }
+}

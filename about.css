@@ -1,0 +1,20 @@
+
+.about-h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #F2FD7D; /* Soft yellow for header */
+}
+.about-p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #F2FD7D; /* Soft yellow for text */
+}
+.about-footer {
+    background-color: #28443F; /* Deep green footer */
+    color: #F2FD7D; /* Soft yellow text */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

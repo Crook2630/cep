@@ -1,0 +1,17 @@
+@media (max-width: 920px){
+  .community{
+    flex-direction:column;
+    align-items: center;
+  }
+  .community .box{
+    width:90%;
+    margin-bottom:20px;
+  }
+}
+
+
+@media (max-width:650px){
+  .community .box{
+    width:75%;
+  }
+}
